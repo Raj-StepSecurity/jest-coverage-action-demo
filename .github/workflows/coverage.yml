@@ -9,11 +9,16 @@ jobs:
   coverage:
     runs-on: ubuntu-latest
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          egress-policy: audit
+
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
 
       - name: Run Jest Coverage Report
-        uses: step-security/jest-coverage-report-action@v2
+        uses: step-security/jest-coverage-report-action@76665bcd3c049b52fbec7285d3ab218cd8dcf261 # v2.3.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           output: report-markdown  # Generate markdown output without attaching a comment
