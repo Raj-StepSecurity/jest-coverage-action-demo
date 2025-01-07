@@ -2,7 +2,7 @@ name: Test GitHubToken Excessive Permissions
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   test-permissions:
     runs-on: ubuntu-latest
