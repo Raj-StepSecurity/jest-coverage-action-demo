@@ -19,7 +19,7 @@ jobs:
         uses: step-security/jest-coverage-report-action@fix_RemoveVuln
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          output: report-markdown  # Generate markdown output without attaching a comment
+          output: report-markdown  # Generate markdown output without attaching a comment 
 
       - name: Output Jest Coverage Result
-        run: echo "${{ steps.coverage.outputs.report }}"  # Output the coverage report in markdown format
+        run: echo "${{ steps.coverage.outputs.report }}"  # Output the coverage report in markdown format 
