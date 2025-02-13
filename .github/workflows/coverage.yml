@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run Jest Coverage Report
-        uses: step-security/jest-coverage-report-action@v2
+        uses: step-security/jest-coverage-report-action@fix_RemoveVuln
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           output: report-markdown  # Generate markdown output without attaching a comment
