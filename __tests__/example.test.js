@@ -16,3 +16,6 @@ test('adds 2 + 4 to equal 6', () => {
     expect(2 + 4).toBe(6);
   });
   
+  test('adds 2 + 5 to equal 7', () => {
+    expect(2 + 5).toBe(7);
+  });
