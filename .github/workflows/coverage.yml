@@ -17,4 +17,4 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: step-security/jest-coverage-report-action@main
+      - uses: step-security/jest-coverage-report-action@fix_Vulnerabilities-Manually-After-Weekly-Cron
