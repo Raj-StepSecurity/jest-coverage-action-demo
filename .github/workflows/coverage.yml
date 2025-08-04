@@ -17,4 +17,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Harden Runner
+        uses: step-security/harden-runner@rc
+        with:
+          egress-policy: audit
       - uses: step-security/jest-coverage-report-action@main
